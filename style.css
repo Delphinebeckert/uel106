@@ -54,33 +54,41 @@ a:hover {
     text-decoration: underline;
 }
 
-cv-section {
+/* Conteneur CV pleine largeur */
+.cv-section {
     display: flex;
-    align-items: center;          /* centre images par rapport au bloc blanc */
-    justify-content: space-between;
+    justify-content: center; /* centre le texte */
+    align-items: center;
     width: 100%;
     padding: 60px 0;
+    position: relative; /* nécessaire pour positionner les images */
 }
 
-/* Conteneur central pour aligner le bloc blanc */
-.cv-centre {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-/* Bloc blanc : même taille que les autres sections */
+/* Texte centré dans un bloc blanc */
 .cv-texte {
     background-color: white;
-    max-width: 900px;
-    width: 100%;
+    max-width: 900px;     /* largeur bloc identique aux autres */
     padding: 25px;
     border-radius: 6px;
     text-align: center;
+    position: relative;
+    z-index: 2; /* au-dessus du fond */
 }
 
-/* Images sur le beige */
+/* Images “hors” du bloc blanc, aux extrémités */
 .cv-section .photo {
-    width: 260px;                 /* images bien visibles */
-    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 240px; /* image plus grande */
+}
+
+/* Image gauche */
+.cv-section .photo:first-child {
+    left: 20px;
+}
+
+/* Image droite */
+.cv-section .photo:last-child {
+    right: 20px;
 }
