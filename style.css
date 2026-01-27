@@ -35,12 +35,7 @@ h2 {
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
-.cv-section {
-    background-color: transparent;
-    max-width: none;
-    margin: 0;
-    padding: 40px 20px;
-}
+
 ul {
 list-style-type: none;
     padding-left: 15px;
@@ -60,11 +55,15 @@ a:hover {
 }
 
 .cv-section {
+    background-color: transparent;
+    max-width: none;
+    margin: 0;
+    padding: 40px 20px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 40px 20px;
 }
 
 /* Bloc texte blanc centré */
