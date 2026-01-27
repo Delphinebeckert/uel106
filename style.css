@@ -55,28 +55,25 @@ a:hover {
 }
 
 .cv-section {
-    background-color: transparent;
-    max-width: none;
-    margin: 0;
-    padding: 40px 20px;
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;          /* centre verticalement images + texte */
     width: 100%;
+    padding: 40px 0;
 }
 
-/* Bloc texte blanc centré */
+/* Bloc blanc : même taille que les autres sections */
 .cv-texte {
     background-color: white;
-    max-width: 700px;
-    padding: 30px;
+    max-width: 900px;             /* MÊME largeur que section */
+    margin: 0 auto;
+    padding: 25px;
     border-radius: 6px;
     text-align: center;
 }
 
 /* Images sur le beige */
 .cv-section .photo {
-    width: 150px;
-    border-radius: 10px;
+    width: 220px;                 /* plus grandes */
+    height: auto;
 }
