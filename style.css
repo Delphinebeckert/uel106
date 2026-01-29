@@ -5,11 +5,6 @@ body {
     color: #000;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* HEADER */
 header {
     background-color: #7a1f2b;
     color: white;
@@ -27,21 +22,6 @@ header p {
     font-size: 1.1em;
 }
 
-/* SECTIONS SIMPLES (PAS PLEIN ÉCRAN) */
-main section {
-    padding: 80px 20px;
-}
-
-/* CONTENU CENTRÉ */
-.section-content {
-    background-color: white;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 6px;
-}
-
-/* TEXTES */
 h2 {
     color: #8b5e3c;
     border-bottom: 2px solid #ddd;
@@ -49,12 +29,12 @@ h2 {
 }
 
 ul {
-    list-style: none;
-    padding-left: 0;
+    list-style-type: none;
+    padding-left: 15px;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 a {
@@ -66,32 +46,51 @@ a:hover {
     text-decoration: underline;
 }
 
-/* SECTION À PROPOS */
-.cv-section {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+section {
+    background-color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 6px;
 }
 
+.cv-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 20px auto;
+    gap: 30px;
+}
+
+/* Bloc texte blanc */
 .cv-texte {
-    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 6px;
     text-align: center;
+    flex: 1;
+}
+
+/* Images visibles et propres */
+.cv-section .photo {
+    width: 180px;
 }
 
 .image-bloc {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
 }
 
-.photo {
-    width: 160px;
+.source-image a {
+    color: #8b5e3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* FOOTER */
-footer {
-    background-color: #7a1f2b;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.source-image a:hover {
+    color: #7a1f2b;
+    text-decoration: underline;
 }
