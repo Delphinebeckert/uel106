@@ -171,3 +171,49 @@ section {
 /* Clic */
 .skill-btn:active {
     transform: scale(1.22);
+    #projects {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 60px auto;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* espace entre chaque projet */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column; /* mobile d'abord */
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 200px;      /* taille plus petite propre */
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    color: #7a1f2b;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background-color: #7a1f2b;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    background-color: #5e1620;
+}
