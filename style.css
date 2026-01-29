@@ -52,6 +52,7 @@ section {
     margin: 60px auto;
     padding: 30px;
     border-radius: 8px;
+     text-align: center;
 }
 
 /* TITRES */
@@ -59,16 +60,19 @@ h2 {
     color: #8b5e3c;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+     text-align: center;
 }
 
 /* LISTES */
 ul {
     list-style: none;
     padding-left: 0;
+     text-align: center;
 }
 
 li {
     margin-bottom: 10px;
+     text-align: center;
 }
 
 /* À PROPOS */
@@ -134,3 +138,36 @@ section {
     max-width: 100%;
     border-radius: 6px;
 }
+.skills-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.skill-btn {
+    background-color: #7a1f2b;   /* bordeaux */
+    color: white;
+    border: 2px solid #7a1f2b;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Survol */
+.skill-btn:hover {
+    background-color: #5e1620;   /* bordeaux plus foncé */
+    transform: scale(1.12);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Clic */
+.skill-btn:active {
+    transform: scale(1.22);
