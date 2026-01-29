@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,114 +30,76 @@ header p {
     font-size: 1.1em;
 }
 
-/* ------------------ SECTIONS (PLEIN ÉCRAN) ------------------ */
+/* ------------------ SECTION STYLES ------------------ */
 main section {
-    min-height: 100vh;
+    min-height: 100vh;       /* full screen height */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
-    background-color: #f3e7d3; /* fond de page uniforme */
+    padding: 50px 20px;
+    background-color: #f3e7d3;
 }
 
-main section .section-content {
-    background-color: white;
-    max-width: 900px;
-    width: 90%;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Spacing entre sections */
-main section:not(:last-child) {
-    margin-bottom: 30px;
-}
-
-/* Adaptation spécifique de la section CV */
-.cv-section {
-    flex-direction: column;
-    gap: 20px;
-}
-
-.cv-section .photo {
-    width: 160px;
-}
-
-.cv-texte {
-    text-align: center;
-}
-/* Boîte blanche centrée */
 .section-content {
     background-color: white;
     max-width: 900px;
     width: 100%;
-    padding: 30px;
-    border-radius: 6px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* ------------------ TEXTES ------------------ */
+/* ------------------ TYPOGRAPHY ------------------ */
 h2 {
     color: #8b5e3c;
+    margin-top: 0;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
 
 ul {
-    list-style-type: none;
-    padding-left: 15px;
+    list-style: none;
+    padding-left: 0;
 }
 
 li {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 a {
     color: #2c3e50;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* ------------------ SECTION CV ------------------ */
-.cv-section {
+/* ------------------ CV SECTION ------------------ */
+.cv-flex {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
-/* Texte CV */
-.cv-texte {
-    background-color: white;
-    padding: 25px;
-    border-radius: 6px;
+.cv-flex .image-bloc,
+.cv-flex .cv-texte {
+    flex: 1 1 300px;
     text-align: center;
-    flex: 1;
 }
 
-/* Images */
-.cv-section .photo {
+.cv-flex .photo {
     width: 180px;
 }
 
-.image-bloc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 200px;
-}
-
-/* Source image */
-.source-image a {
-    color: #8b5e3c;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.source-image a:hover {
-    color: #7a1f2b;
-    text-decoration: underline;
+/* ------------------ FOOTER (STYLE) ------------------ */
+footer {
+    background-color: #7a1f2b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
 }
