@@ -125,3 +125,7 @@ footer {
 section {
     scroll-margin-top: 80px;
 }
+.project-card {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
