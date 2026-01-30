@@ -171,7 +171,11 @@ section {
 /* Clic */
 .skill-btn:active {
     transform: scale(1.22);
-    #projects {
+}
+
+/* ================= PROJETS ================= */
+
+#projects {
     background-color: white;
     padding: 40px 20px;
     margin: 60px auto;
@@ -182,19 +186,19 @@ section {
 .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 50px; /* espace entre chaque projet */
+    gap: 50px;
 }
 
 .project-card {
     display: flex;
-    flex-direction: column; /* mobile d'abord */
+    flex-direction: column;
     align-items: center;
     gap: 15px;
     text-align: center;
 }
 
 .project-card img {
-    width: 200px;      /* taille plus petite propre */
+    width: 200px;
     border-radius: 8px;
 }
 
@@ -217,9 +221,12 @@ section {
 .project-card a:hover {
     background-color: #5e1620;
 }
-    .contact-section {
-    background-color: #f3e7d3;   /* fond doux */
-    padding: 120px 20px;         /* GROS espace vertical */
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background-color: #f3e7d3;
+    padding: 120px 20px;
 }
 
 .contact-content {
@@ -236,19 +243,23 @@ section {
     margin-top: 20px;
 }
 
+/* ================= STICKY HEADER ================= */
+
 header,
 nav {
     position: sticky;
     top: 0;
-    background-color: #7a1f2b; /* nécessaire pour ne pas être transparent au-dessus */
-    z-index: 1000; /* pour rester au-dessus du contenu */
+    background-color: #7a1f2b;
+    z-index: 1000;
 }
 
-/* éviter que le nav cache le contenu */
 main {
     padding-top: 20px;
 }
-    .nav-link.active {
+
+/* ================= NAV ACTIVE ================= */
+
+.nav-link.active {
     border-bottom: 3px solid white;
     padding-bottom: 4px;
 }
