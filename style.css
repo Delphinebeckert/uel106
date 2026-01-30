@@ -240,7 +240,8 @@ header,
 nav {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    background-color: #7a1f2b; /* nécessaire pour ne pas être transparent au-dessus */
+    z-index: 1000; /* pour rester au-dessus du contenu */
 }
 
 /* éviter que le nav cache le contenu */
