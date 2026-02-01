@@ -151,8 +151,7 @@ section {
 }
 
 .skill-btn {
-    background-color: #7a1f2b;   /* bordeaux */
-    color: white;
+    background-color: #7a1f2b;  
     border: 2px solid #7a1f2b;
     padding: 12px 22px;
     border-radius: 25px;
@@ -167,7 +166,7 @@ section {
 
 /* Survol */
 .skill-btn:hover {
-    background-color: #5e1620;   /* bordeaux plus foncé */
+    background-color: #5e1620;  
     transform: scale(1.12);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
@@ -229,7 +228,7 @@ section {
 /* ================= CONTACT ================= */
 
 .contact-section {
-    background-color: rgba(122, 31, 43, 0.4); /* bordeaux transparent */
+    background-color: rgba(122, 31, 43, 0.4); 
     padding: 140px 20px;
 }
 
@@ -298,10 +297,11 @@ footer {
     backdrop-filter: blur(8px);
 }
 #random-image {
+    width: 100%;
+    max-width: 900px;
+    height: 220px;         
+    object-fit: cover;    
     display: block;
-    max-width: 100%;
-    width: 600px;          /* taille raisonnable */
-    height: auto;
-    margin: 30px auto;
+    margin: 20px auto 0;
     border-radius: 12px;
 }
