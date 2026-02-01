@@ -290,6 +290,6 @@ nav {
 header,
 nav,
 footer {
-    background-color: rgba(122, 31, 43, 0.7);
+    background-color: rgba(122, 31, 43, 0.55);
     backdrop-filter: blur(8px);
 }
