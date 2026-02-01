@@ -299,8 +299,9 @@ footer {
 }
 #random-image {
     display: block;
-    width: 100%;
-    max-width: 800px;
+    max-width: 100%;
+    width: 600px;          /* taille raisonnable */
+    height: auto;
     margin: 30px auto;
-    background: white;
+    border-radius: 12px;
 }
