@@ -298,13 +298,12 @@ footer {
 }
 #random-image {
     width: 100%;
-    max-width: 200px;   
-    height: 150px;     
+    max-width: 450px;   
+    height: 140px;      
     object-fit: cover;
     display: block;
     margin: 20px auto;
     border-radius: 12px;
-    opacity: 0.85;      
 }
 
 
@@ -314,5 +313,8 @@ footer {
 #contact {
     scroll-margin-top: 70px;
 }
-
+.site-header,
+.site-header nav {
+    position: static;
+}
 
