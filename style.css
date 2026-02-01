@@ -264,3 +264,13 @@ header,
 nav {
     background-color: #7a1f2b;
 }
+.project-tag {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    background-color: #f3e7d3;
+    color: #7a1f2b;
+    border-radius: 12px;
+    font-weight: bold;
+}
