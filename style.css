@@ -312,3 +312,7 @@ footer {
 #contact {
     scroll-margin-top: 70px;
 }
+header,
+nav {
+    position: static;
+}
