@@ -298,14 +298,14 @@ footer {
 }
 #random-image {
     width: 100%;
-    max-width: 900px;
-    height: 220px;         
-    object-fit: cover;    
+    max-width: 500px;   
+    height: 150px;     
+    object-fit: cover;
     display: block;
-    margin: 20px auto 0;
+    margin: 20px auto;
     border-radius: 12px;
+    opacity: 0.85;      
 }
-
 
 
 #about,
