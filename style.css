@@ -312,12 +312,6 @@ footer {
     scroll-margin-top: 70px;
 }
 
-.site-header,
-.site-header nav,
-header,
-nav {
-    position: static !important;
-}
 .site-header {
     position: sticky;
     top: 0;
