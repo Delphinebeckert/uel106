@@ -297,8 +297,8 @@ footer {
 
 #random-image {
     width: 100%;
-    max-width: 250px;
-    height: 80px;
+    max-width: 350px;
+    height: 120px;
     object-fit: cover;
     display: block;
     margin: 20px auto;
