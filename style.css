@@ -229,8 +229,8 @@ section {
 /* ================= CONTACT ================= */
 
 .contact-section {
-    background-color: #f3e7d3;
-    padding: 120px 20px;
+    background-color: rgba(122, 31, 43, 0.4); /* bordeaux transparent */
+    padding: 140px 20px;
 }
 
 .contact-content {
